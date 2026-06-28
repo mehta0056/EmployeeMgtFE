@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-form-item .ant-form-item-required {
+  flex-direction: row-reverse;
+}
+
+.ant-form-item .ant-form-item-required::before {
+  margin-inline-end: 0 !important;
+  margin-inline-start: 4px !important;
+}
+/* .ant-table-thead > tr > th {
+  background: #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 600;
+} */
