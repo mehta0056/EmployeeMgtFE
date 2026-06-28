@@ -7,7 +7,9 @@ import AuthLayout from "../layouts/AuthLayout";
 import MainLayout from "../layouts/MainLayout";
 
 import ProtectedRoute from "./ProtectedRoute";
-import Employee from "../components/employee/Employee";
+import EmployeeList from "../pages/Employee/EmployeeList/EmployeeList";
+import { ROUTES } from "./routePath";
+import AddEmployee from "../pages/Employee/AddEmployee/AddEmployee";
 
 const AppRoutes = () => {
   return (
@@ -26,7 +28,8 @@ const AppRoutes = () => {
         }
       >
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/employees" element={<Employee />} />
+        <Route path="/employees" element={<EmployeeList />} />
+        <Route path={ROUTES.ADD_EMPLOYEE} element={<AddEmployee />} />
       </Route>
 
       {/* Default */}

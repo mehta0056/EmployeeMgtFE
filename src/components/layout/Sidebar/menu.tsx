@@ -10,6 +10,7 @@ export interface AppMenuItem {
   key: string;
   label: string;
   icon: React.ComponentType;
+  activePaths?: string[];
 }
 
 export const menuItems: AppMenuItem[] = [

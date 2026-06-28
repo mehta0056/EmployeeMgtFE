@@ -1,21 +1,20 @@
 import { Layout } from "antd";
 import { Outlet } from "react-router-dom";
-import { COLORS } from "../theme";
 import Sidebar from "../components/layout/Sidebar/Sidebar";
+import Header from "../components/layout/Header/Header";
+import { useState } from "react";
 
-const { Header, Content, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 const MainLayout = () => {
+  const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Header
-        style={{
-          color: COLORS.primary,
-          fontSize: 20,
-        }}
-      >
-        Employee Management
-      </Header>
+        collapsed={collapsed}
+        onToggle={() => setCollapsed(!collapsed)}
+        title="Employee Management System"
+      />
       <Layout>
         <Sider width={200}>
           <Sidebar />
