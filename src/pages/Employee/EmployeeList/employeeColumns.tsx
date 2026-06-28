@@ -1,5 +1,5 @@
 import type { ColumnsType } from "antd/es/table";
-import { Button, Popconfirm, Space, Tag } from "antd";
+import { Button, Space, Tag } from "antd";
 import { DeleteOutlined, EyeOutlined } from "@ant-design/icons";
 import type { Employee } from "./types";
 
@@ -18,7 +18,6 @@ const getStatusColor = (status: Employee["status"]) => {
 
 interface EmployeeColumnProps {
   onView: (employee: Employee) => void;
-  onEdit: (employee: Employee) => void;
   onDelete: (employee: Employee) => void;
 }
 
@@ -101,9 +100,12 @@ export const employeeColumns = ({
           onClick={() => onView(record)}
         />
 
-        <Popconfirm title="Delete employee?" onConfirm={() => onDelete(record)}>
-          <Button type="text" danger icon={<DeleteOutlined />} />
-        </Popconfirm>
+        <Button
+          type="text"
+          danger
+          icon={<DeleteOutlined />}
+          onClick={() => onDelete(record)}
+        />
       </Space>
     ),
   },

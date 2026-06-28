@@ -52,10 +52,6 @@ const EmployeeForm = () => {
       title: "Emergency",
       content: <EmergencyInformation />,
     },
-    // {
-    //   title: "Review",
-    //   content: <ReviewInformation form={form} />,
-    // },
   ];
 
   return (
