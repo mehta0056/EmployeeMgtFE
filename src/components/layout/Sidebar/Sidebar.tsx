@@ -1,5 +1,4 @@
 import { Menu } from "antd";
-import React from "react";
 import { menuItems } from "./menu";
 import { useNavigate } from "react-router-dom";
 
