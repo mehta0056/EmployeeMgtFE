@@ -17,6 +17,7 @@
 }
 
 .dashboard-card:hover {
+  border-radius: 12px;
   box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2) !important;
 }
 /* .ant-table-thead > tr > th {

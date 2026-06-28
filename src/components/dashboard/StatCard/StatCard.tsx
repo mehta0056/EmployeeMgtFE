@@ -16,13 +16,7 @@ const StatsCard = ({
   growth,
 }: StatsCardProps) => {
   return (
-    <Card
-      hoverable
-      className="dashboard-card"
-      style={{
-        borderRadius: 12,
-      }}
-    >
+    <Card hoverable className="dashboard-card">
       <Space
         style={{
           width: "100%",
