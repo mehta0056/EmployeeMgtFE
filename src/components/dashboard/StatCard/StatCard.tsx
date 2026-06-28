@@ -18,6 +18,7 @@ const StatsCard = ({
   return (
     <Card
       hoverable
+      className="dashboard-card"
       style={{
         borderRadius: 12,
       }}

@@ -11,6 +11,14 @@
   margin-inline-end: 0 !important;
   margin-inline-start: 4px !important;
 }
+
+.dashboard-card {
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2) !important;
+}
 /* .ant-table-thead > tr > th {
   background: #ffffff !important;
   color: #ffffff !important;
